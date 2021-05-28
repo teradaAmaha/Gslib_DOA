@@ -6,12 +6,14 @@ void World::update(float delta_time) {
     actors_.update(delta_time);	// 更新
     actors_.collide();		// 衝突判定
     actors_.remove();		// 死亡しているアクターの削除
+    
 }
 
 // 描画
 void World::draw() const {
 
     actors_.draw();
+    timer_.draw();
 }
 
 // ゲームオーバー
@@ -22,6 +24,7 @@ void World::game_over() {
 // ゲームクリアー
 void World::game_clear() {
     is_game_clear_ = true;
+    timer_.clear();
 }
 
 // ゲームオーバーか？
@@ -49,6 +52,11 @@ void World::clear() {
 // フィールドの取得
 Field& World::field() {
     return field_;
+}
+
+//タイマーの減算
+void World::sub_timer(int timer) {
+    timer_.sub(timer);
 }
 
 // アクターの追加（ワールド抽象インターフェースの実装）

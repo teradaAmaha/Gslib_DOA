@@ -21,7 +21,8 @@ public:
     virtual void game_clear() = 0;
     //フィールドの取得
     virtual Field& field() = 0;
-
+    //タイマーの減算
+    virtual void sub_timer(int timer) = 0;
 };
 
 #endif

@@ -4,6 +4,7 @@
 #include "IWorld.h"
 #include "ActorManager.h"
 #include"Field.h"
+#include "Timer.h"
 
 
 // ワールドクラス
@@ -27,6 +28,8 @@ public:
     virtual void game_over() override;
     // ゲームクリア
     virtual void game_clear() override;
+    //タイムの減算
+    virtual void  sub_timer(int timer) override;
 
     // ゲームオーバーか？
     bool is_game_over() const;
@@ -42,6 +45,8 @@ private:
     ActorManager actors_;
     //フィールド
     Field field_;
+    //タイマー
+    Timer timer_;
 
     // ゲームオーバーか？
     bool            is_game_over_{ false };

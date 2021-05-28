@@ -15,6 +15,9 @@ enum {
     TextureBase,
     TextureTitleLogo,//タイトルロゴ
     TextureTitleStart,//タイトル操作&開始
+    TextureNumber,
+    TextureCoron,
+
 
 
 };
