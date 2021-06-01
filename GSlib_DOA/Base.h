@@ -14,9 +14,14 @@ public:
 	virtual void react(Actor& other) override;
 
 	void alive(); //ライフが０になれば死ぬ
+
+	
 private:
-	int life = 20;
+	float life = 20.0f;
 	int counter = 0;
+
+	//下に各エネミー、弾のダメージを追加
+	float const e1_ = 3;
 };
 
 #endif

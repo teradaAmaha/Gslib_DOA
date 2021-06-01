@@ -6,7 +6,7 @@ public:
 	//コンストラクタ
 	Timer(int timer = 6000);
 	//タイマーの初期化
-	void initialize(int timer = 6000);
+	void initialize(int timer = 0);
 	//タイマーの減算
 	void sub(int timer);
 	//タイマーの描画

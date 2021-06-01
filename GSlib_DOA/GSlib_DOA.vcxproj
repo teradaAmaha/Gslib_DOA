@@ -150,6 +150,7 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="ActorManager.cpp" />
     <ClCompile Include="Base.cpp" />
+    <ClCompile Include="BaseLife.cpp" />
     <ClCompile Include="BoundingRectangle.cpp" />
     <ClCompile Include="Enemy1.cpp" />
     <ClCompile Include="Enemy2.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="ActorManager.h" />
     <ClInclude Include="Base.h" />
+    <ClInclude Include="BaseLife.h" />
     <ClInclude Include="NumberTexture.h" />
     <ClInclude Include="PlayerBeam1.h" />
     <ClInclude Include="boundingRectAngle.h" />

@@ -5,7 +5,7 @@
 #include "ActorManager.h"
 #include"Field.h"
 #include "Timer.h"
-
+#include "BaseLife.h"
 
 // ワールドクラス
 class World : public IWorld {
@@ -30,6 +30,8 @@ public:
     virtual void game_clear() override;
     //タイムの減算
     virtual void  sub_timer(int timer) override;
+    //hpの減算
+    virtual void sub_hp(int hp) override;
 
     // ゲームオーバーか？
     bool is_game_over() const;
@@ -47,6 +49,8 @@ private:
     Field field_;
     //タイマー
     Timer timer_;
+
+    BaseLife baselife;
 
     // ゲームオーバーか？
     bool            is_game_over_{ false };

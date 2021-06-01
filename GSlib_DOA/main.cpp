@@ -48,6 +48,7 @@ class MyGame : public gslib::Game {
         gsLoadTexture(TextureItem, "Assets/ITEM.png");
         gsLoadTexture(TextureNumber, "Assets/NUM.png");
         gsLoadTexture(TextureCoron, "Assets/coron.png");
+        gsLoadTexture(TexturePer, "Asset/hp.png");
   
 
         // ƒvƒŒ[ƒ„[‚ğ’Ç‰Á

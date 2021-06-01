@@ -16,11 +16,12 @@ void Timer::sub(int timer) {
 	timer_ = std::max(0, timer_ - timer);
 }
 
-void Timer::draw() const {
+void Timer::draw() const
+{
 	static const NumberTexture number{ TextureNumber, 16, 16 };
 	number.draw(GSvector2{ 280, 0 }, timer_, 4);
 
-	GSvector2 pp{ 303.0f,0.0f };
+	GSvector2 pp{ 302.0f,0.0f };
 	gsDrawSprite2D(TextureCoron, &pp, NULL, NULL, NULL, NULL, NULL);
 }
 

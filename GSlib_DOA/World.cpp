@@ -14,6 +14,7 @@ void World::draw() const {
 
     actors_.draw();
     timer_.draw();
+    hp_.draw();
 }
 
 // ゲームオーバー
@@ -57,6 +58,10 @@ Field& World::field() {
 //タイマーの減算
 void World::sub_timer(int timer) {
     timer_.sub(timer);
+}
+
+void World::sub_hp(int hp) {
+    baselife.sub(hp);
 }
 
 // アクターの追加（ワールド抽象インターフェースの実装）

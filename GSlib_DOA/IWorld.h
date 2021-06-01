@@ -23,6 +23,8 @@ public:
     virtual Field& field() = 0;
     //タイマーの減算
     virtual void sub_timer(int timer) = 0;
+    //hpの減算
+    virtual void sub_hp(int hp) = 0;
 };
 
 #endif

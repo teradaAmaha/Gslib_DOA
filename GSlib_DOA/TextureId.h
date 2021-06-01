@@ -17,6 +17,7 @@ enum {
     TextureTitleStart,//タイトル操作&開始
     TextureNumber,
     TextureCoron,
+    TexturePer,
 
 
 
